@@ -1,17 +1,18 @@
 public class JoinJob {
     public int main(String[] args) {
-        JobConf conf = new JobConf(JoinJob.class);
-        conf.setJobName("map join");
-        conf.setInputFormat(CompositeInputFormat.class);
-        FileOutputFormat.setOutputPath(conf, new Path(args[2]));
-        conf.set("mapred.join.expr", CompositeInputFormat.compose("inner",
-                KeyValueTextInputFormat.class,
-                args[0],
-                args[1]
-        ));
-        conf.setMapperClass(MapJoinMapper.class);
-        conf.setOutputKeyClass(Text.class);
-        conf.setOutputValueClass(Text.class);
-        JobClient.runJob(conf);
+        Job job = Job.getInstance();
+        job.setJarByClass(JoinJob.class);
+        job.setJobName("JoinJob sort");
+        MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, CallsJoinMapper.class);
+        MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, SystemsJoinMapper.class);
+        FileOutputFormat.setOutputPath(job, new Path(args[2]));
+        job.setPartitionerClass(TextPair.FirstPartitioner.class);
+        job.setGroupingComparatorClass(TextPair.FirstComparator.class);
+        job.setReducerClass(JoinReducer.class);
+        job.setMapOutputKeyClass(TextPair.class);
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(Text.class);
+        job.setNumReduceTasks(2);
+        System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
