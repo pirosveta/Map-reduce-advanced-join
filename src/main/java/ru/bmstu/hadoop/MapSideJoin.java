@@ -1,4 +1,4 @@
-public class MapSideJoin {
+public class JoinJob {
     public int main(String[] args) {
         JobConf conf = new JobConf(JoinJob.class);
         conf.setJobName("map join");
