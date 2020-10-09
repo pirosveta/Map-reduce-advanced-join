@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/MapSideJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/MapSideJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/MapJoinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602269342057</updated>
-      <workItem from="1602269356979" duration="1329000" />
+      <workItem from="1602269356979" duration="1338000" />
     </task>
     <servers />
   </component>
