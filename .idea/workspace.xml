@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +49,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/apache-maven-3.6.3" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -61,19 +59,6 @@
       <recent name="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -86,6 +71,7 @@
       <workItem from="1602269356979" duration="1663000" />
       <workItem from="1602509640954" duration="2642000" />
       <workItem from="1602512639452" duration="768000" />
+      <workItem from="1602513624741" duration="96000" />
     </task>
     <servers />
   </component>
@@ -113,14 +99,14 @@
       <screen x="0" y="0" width="1920" height="964" />
     </state>
     <state x="654" y="304" width="601" height="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.964@0.0.1920.964" timestamp="1602511978155" />
-    <state x="579" y="166" width="741" height="634" key="FileChooserDialogImpl" timestamp="1602513404253">
+    <state x="579" y="166" width="741" height="634" key="FileChooserDialogImpl" timestamp="1602513701973">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
-    <state x="579" y="166" width="741" height="634" key="FileChooserDialogImpl/0.0.1920.964@0.0.1920.964" timestamp="1602513404253" />
-    <state x="315" y="0" width="1280" height="964" key="SettingsEditor" timestamp="1602513405664">
+    <state x="579" y="166" width="741" height="634" key="FileChooserDialogImpl/0.0.1920.964@0.0.1920.964" timestamp="1602513701973" />
+    <state x="315" y="0" width="1280" height="964" key="SettingsEditor" timestamp="1602513718985">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
-    <state x="315" y="0" width="1280" height="964" key="SettingsEditor/0.0.1920.964@0.0.1920.964" timestamp="1602513405664" />
+    <state x="315" y="0" width="1280" height="964" key="SettingsEditor/0.0.1920.964@0.0.1920.964" timestamp="1602513718985" />
     <state x="455" y="154" width="1000" height="656" key="Vcs.Push.Dialog.v2" timestamp="1602269506332">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
