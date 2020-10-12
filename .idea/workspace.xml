@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/CallsJoinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/CallsJoinMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinMap.java" afterDir="false" />
@@ -105,7 +106,7 @@
       <workItem from="1602512639452" duration="768000" />
       <workItem from="1602513624741" duration="519000" />
       <workItem from="1602514190899" duration="503000" />
-      <workItem from="1602514832987" duration="2722000" />
+      <workItem from="1602514832987" duration="2726000" />
     </task>
     <servers />
   </component>
