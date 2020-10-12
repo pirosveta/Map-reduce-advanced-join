@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602269342057</updated>
       <workItem from="1602269356979" duration="1663000" />
-      <workItem from="1602509640954" duration="2047000" />
+      <workItem from="1602509640954" duration="2211000" />
     </task>
     <servers />
   </component>
@@ -91,6 +92,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602511712843">
+      <screen x="0" y="0" width="1920" height="964" />
+    </state>
+    <state x="414" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.964@0.0.1920.964" timestamp="1602511712843" />
     <state x="455" y="154" width="1000" height="656" key="Vcs.Push.Dialog.v2" timestamp="1602269506332">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
