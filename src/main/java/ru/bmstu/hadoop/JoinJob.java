@@ -1,5 +1,7 @@
 package ru.bmstu.hadoop;
 
+import org.apache.hadoop.*;
+
 public class JoinJob {
     public int main(String[] args) {
         Job job = Job.getInstance();
