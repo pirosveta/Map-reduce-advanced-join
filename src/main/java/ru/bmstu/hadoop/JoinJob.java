@@ -1,6 +1,6 @@
 package ru.bmstu.hadoop;
 
-import org.apache.hadoop.*;
+import org.apache.hadoop.io.*;
 
 public class JoinJob {
     public int main(String[] args) {
