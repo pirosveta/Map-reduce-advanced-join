@@ -23,6 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Map-reduce-advanced-join.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Map-reduce-advanced-join.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +104,7 @@
       <workItem from="1602512639452" duration="768000" />
       <workItem from="1602513624741" duration="519000" />
       <workItem from="1602514190899" duration="503000" />
-      <workItem from="1602514832987" duration="852000" />
+      <workItem from="1602514832987" duration="985000" />
     </task>
     <servers />
   </component>
