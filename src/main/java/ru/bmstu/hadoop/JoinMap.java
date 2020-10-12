@@ -2,10 +2,14 @@ package ru.bmstu.hadoop;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.MapReduceBase;
+import org.apache.hadoop.mapred.OutputCollector;
+import org.apache.hadoop.mapred.Reporter;
+import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.lib.join.TupleWritable;
 
-public class MapJoinMapper extends MapReduceBase implements
-        Mapper<Text, TupleWritable, Text, Text> {
+import java.io.IOException;
+
+public class MapJoinMapper extends MapReduceBase implements Mapper<Text, TupleWritable, Text, Text> {
     @Override
     public void map(Text key, TupleWritable value,
                     OutputCollector<Text, Text> output,

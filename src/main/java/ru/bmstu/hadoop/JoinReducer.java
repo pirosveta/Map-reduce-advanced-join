@@ -1,8 +1,14 @@
 package ru.bmstu.hadoop;
 
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer;
+
+import java.io.IOException;
+import java.util.Iterator;
+
 public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     @Override
-    protected void reduce(TextPair key, Iterable<Text> values, Context context) throws
+    protected void reduce(TextPair key, Iterable<Text> values, WrappedReducer.Context context) throws
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text systemInfo = new Text(iter.next());
