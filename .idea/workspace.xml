@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Map-reduce-advanced-join.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Map-reduce-advanced-join.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CallsJoinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/CallsJoinMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HashPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/HashPartitioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SystemsJoinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/SystemsJoinMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +43,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/apache-maven-3.6.3" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -60,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
@@ -86,7 +85,7 @@
       <updated>1602269342057</updated>
       <workItem from="1602269356979" duration="1663000" />
       <workItem from="1602509640954" duration="2642000" />
-      <workItem from="1602512639452" duration="435000" />
+      <workItem from="1602512639452" duration="765000" />
     </task>
     <servers />
   </component>
@@ -114,13 +113,21 @@
       <screen x="0" y="0" width="1920" height="964" />
     </state>
     <state x="654" y="304" width="601" height="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.964@0.0.1920.964" timestamp="1602511978155" />
-    <state x="315" y="0" width="1280" height="964" key="SettingsEditor" timestamp="1602513022263">
+    <state x="579" y="166" width="741" height="634" key="FileChooserDialogImpl" timestamp="1602513404253">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
-    <state x="315" y="0" width="1280" height="964" key="SettingsEditor/0.0.1920.964@0.0.1920.964" timestamp="1602513022263" />
+    <state x="579" y="166" width="741" height="634" key="FileChooserDialogImpl/0.0.1920.964@0.0.1920.964" timestamp="1602513404253" />
+    <state x="315" y="0" width="1280" height="964" key="SettingsEditor" timestamp="1602513405664">
+      <screen x="0" y="0" width="1920" height="964" />
+    </state>
+    <state x="315" y="0" width="1280" height="964" key="SettingsEditor/0.0.1920.964@0.0.1920.964" timestamp="1602513405664" />
     <state x="455" y="154" width="1000" height="656" key="Vcs.Push.Dialog.v2" timestamp="1602269506332">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
     <state x="455" y="154" width="1000" height="656" key="Vcs.Push.Dialog.v2/0.0.1920.964@0.0.1920.964" timestamp="1602269506332" />
+    <state x="575" y="356" width="749" height="273" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1602513400807">
+      <screen x="0" y="0" width="1920" height="964" />
+    </state>
+    <state x="575" y="356" width="749" height="273" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.964@0.0.1920.964" timestamp="1602513400807" />
   </component>
 </project>
