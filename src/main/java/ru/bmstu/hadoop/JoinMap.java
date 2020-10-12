@@ -1,3 +1,5 @@
+package ru.bmstu.hadoop;
+
 public class MapJoinMapper extends MapReduceBase implements
         Mapper<Text, TupleWritable, Text, Text> {
     @Override
