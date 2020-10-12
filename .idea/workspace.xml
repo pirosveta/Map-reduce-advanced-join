@@ -54,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602269342057</updated>
       <workItem from="1602269356979" duration="1663000" />
+      <workItem from="1602509640954" duration="337000" />
     </task>
     <servers />
   </component>
@@ -70,6 +71,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="455" y="154" width="1000" height="656" key="Vcs.Push.Dialog.v2" timestamp="1602269506332">
