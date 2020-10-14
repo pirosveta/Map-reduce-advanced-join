@@ -4,6 +4,10 @@ import org.apache.hadoop.io.ByteWritable;
 import org.apache.hadoop.mapreduce.Partitioner;
 
 public class TextPair {
+    public Object getFirst() {
+        return
+    }
+
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
         @Override
         public int getPartition(K key, V value, int numReduceTasks) {
