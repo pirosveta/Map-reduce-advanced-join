@@ -1,6 +1,7 @@
 package ru.bmstu.hadoop;
 
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer;
 
 import java.io.IOException;
