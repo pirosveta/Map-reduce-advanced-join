@@ -10,7 +10,7 @@ public class TextPair extends org.apache.hadoop.mapreduce.Partitioner {
         return 0;
     }
 
-    public static class FirstPartitioner extends Partitioner {
+    public static class FirstPartitioner implements Partitioner {
         @Override
         public int getPartition(Object key, Object value, int numPartitions) {
             return 0;
