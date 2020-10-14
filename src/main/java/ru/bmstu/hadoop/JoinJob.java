@@ -7,8 +7,6 @@ import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-import java.io.IOException;
-
 public class JoinJob {
     public int main(String[] args) throws Exception{
         Job job = Job.getInstance();
