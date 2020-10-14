@@ -1,2 +1,9 @@
-public class TextPair {
+package ru.bmstu.hadoop;
+
+import org.apache.hadoop.mapred.Partitioner;
+
+public class TextPair extends Partitioner{
+    public class FirstPartitioner {
+
+    }
 }
