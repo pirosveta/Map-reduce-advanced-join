@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/JoinReducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/TextPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/TextPair.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +107,7 @@
       <workItem from="1602513624741" duration="519000" />
       <workItem from="1602514190899" duration="503000" />
       <workItem from="1602514832987" duration="2726000" />
-      <workItem from="1602661802656" duration="1833000" />
+      <workItem from="1602661802656" duration="2206000" />
     </task>
     <servers />
   </component>
@@ -148,10 +147,10 @@
       <screen x="0" y="0" width="1920" height="964" />
     </state>
     <state x="622" y="183" width="655" height="600" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.964@0.0.1920.964" timestamp="1602514324672" />
-    <state x="654" y="304" width="601" height="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602511978155">
+    <state x="654" y="304" width="601" height="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602663696863">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
-    <state x="654" y="304" width="601" height="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.964@0.0.1920.964" timestamp="1602511978155" />
+    <state x="654" y="304" width="601" height="356" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.964@0.0.1920.964" timestamp="1602663696863" />
     <state x="579" y="166" width="751" height="634" key="FileChooserDialogImpl" timestamp="1602514439739">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
