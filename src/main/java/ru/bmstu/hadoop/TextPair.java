@@ -1,5 +1,6 @@
 package ru.bmstu.hadoop;
 
+import org.apache.hadoop.io.ByteWritable;
 import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.Partitioner;
 
@@ -9,8 +10,7 @@ public class TextPair extends org.apache.hadoop.mapreduce.Partitioner {
         return 0;
     }
 
-    public static class FirstPartitioner implements Partitioner {
-
+    public static class FirstPartitioner extends Partitioner {
         @Override
         public int getPartition(Object key, Object value, int numPartitions) {
             return 0;
@@ -22,7 +22,7 @@ public class TextPair extends org.apache.hadoop.mapreduce.Partitioner {
         }
     }
 
-    public static class FirstComparator {
+    public static class FirstComparator extends ByteWritable.Comparator {
 
     }
 }
