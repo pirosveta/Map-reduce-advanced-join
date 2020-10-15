@@ -4,6 +4,9 @@ import org.apache.hadoop.io.ByteWritable;
 import org.apache.hadoop.mapreduce.Partitioner;
 
 public class TextPair {
+    public TextPair(String firstKey, String secondKey) {
+    }
+
     public Object getFirst() {
         return
     }
