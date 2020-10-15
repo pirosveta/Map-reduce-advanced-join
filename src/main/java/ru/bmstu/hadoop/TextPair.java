@@ -5,6 +5,7 @@ import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.mapreduce.Partitioner;
 
 public class TextPair {
+    private String firstKey, secondKey;
     public TextPair(String firstKey, String secondKey) {
     }
 
