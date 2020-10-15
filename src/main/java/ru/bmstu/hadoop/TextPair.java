@@ -14,7 +14,7 @@ public class TextPair {
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
         @Override
         public int getPartition(K key, V value, int numReduceTasks) {
-            return (key.hashCode() % numReduceTasks;
+            return key.hashCode() % numReduceTasks;
         }
     }
 
