@@ -1,6 +1,7 @@
 package ru.bmstu.hadoop;
 
 import org.apache.hadoop.io.ByteWritable;
+import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.mapreduce.Partitioner;
 
 public class TextPair {
