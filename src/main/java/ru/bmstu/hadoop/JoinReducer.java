@@ -11,11 +11,17 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
     protected void reduce(TextPair key, Iterable<Text> values, WrappedReducer.Context context) throws
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
-        Text systemInfo = new Text(iter.next());
+        Text nameOfAirport = new Text(iter.next());
+        int minDelay = Integer.MAX_VALUE, maxDelay = 0, avgDelay = 0, numberOfDelay = 0;
         while (iter.hasNext()) {
-            Text call = iter.next();
-            Text outValue = new Text(call.toString() + "\t" + systemInfo.toString());
-            context.write(key.getFirst(), outValue);
+            int delay = Integer.parseInt(iter.next().toString());
+            if (delay < minDelay) minDelay = delay;
+            if (delay > maxDelay) maxDelay = delay;
+            avgDelay += delay;
+            numberOfDelay++;
         }
+        avgDelay /= numberOfDelay;
+        Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
+        context.write(key.getFirst(), outValue);
     }
 }
