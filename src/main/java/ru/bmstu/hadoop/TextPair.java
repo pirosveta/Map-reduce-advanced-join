@@ -7,9 +7,7 @@ public class TextPair {
     public TextPair(String firstKey, String secondKey) {
     }
 
-    public Object getFirst() {
-        return
-    }
+
 
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
         @Override
