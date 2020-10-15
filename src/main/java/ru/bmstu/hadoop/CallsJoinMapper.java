@@ -10,8 +10,13 @@ import java.io.IOException;
 public class CallsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
     protected void map(LongWritable key, Text value, WrappedReducer.Context context) throws IOException, InterruptedException {
-        ServiceCall call = new ServiceCall(value);
-        context.write(new TextPair(call.getSystemA().toString(),"1"),
+        if ();
+        String[] columns = value.toString().split(",");
+        if (Integer.parseInt(columns[17]) > 0) {
+            String destAirportId = columns[14], delay = columns[17];
+            context.write(new TextPair(destAirportId, "1"), new Text(delay));
+        }
+        context.write(new TextPair("0", "1"),
                 new Text(call.toString()));
     }
 }

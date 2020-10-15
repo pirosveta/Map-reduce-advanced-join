@@ -10,11 +10,7 @@ import java.io.IOException;
 public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
     @Override
     protected void map(LongWritable key, Text value, WrappedReducer.Context context) throws IOException, InterruptedException {
-        if ();
-        String[] columns = value.toString().split(",");
-        if (Integer.parseInt(columns[18]) > 0) {
-            String destAirportId = columns[14], delay = columns[18];
-        }
+
         SystemInfo system = new SystemInfo(value);
         context.write(new TextPair(system.getSystemCode().toString(),"0"), new Text(system.toString()));
     }
