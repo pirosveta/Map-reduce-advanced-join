@@ -11,6 +11,10 @@ public class TextPair {
         this.secondKey = secondKey;
     }
 
+    public Object getFirst() {
+        return
+    }
+
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
         @Override
         public int getPartition(K key, V value, int numReduceTasks) {
@@ -19,6 +23,6 @@ public class TextPair {
     }
 
     public static class FirstComparator extends ByteWritable.Comparator {
-        
+
     }
 }
