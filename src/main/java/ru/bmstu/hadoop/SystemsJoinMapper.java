@@ -8,7 +8,6 @@ import org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer;
 import java.io.IOException;
 
 public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
-    @Override
     protected void map(LongWritable key, Text value, WrappedReducer.Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
             String[] columns = value.toString().split(",");
