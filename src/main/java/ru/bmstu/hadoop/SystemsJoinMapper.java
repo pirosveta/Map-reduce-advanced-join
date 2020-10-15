@@ -12,7 +12,7 @@ public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     protected void map(LongWritable key, Text value, WrappedReducer.Context context) throws IOException, InterruptedException {
         if ();
         String[] columns = value.toString().split(",");
-        String destAirportId = columns[14], delay = columns[17];
-        context.write(new TextPair(destAirportId, "1"), new Text(delay));
+        String destAirportId = columns[0], nameAirport = columns[1];
+        context.write(new TextPair(destAirportId, "0"), new Text(nameAirport));
     }
 }
