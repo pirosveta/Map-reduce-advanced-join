@@ -1,6 +1,7 @@
 package ru.bmstu.hadoop;
 
 import org.apache.hadoop.io.ByteWritable;
+import org.apache.hadoop.io.RawComparator;
 import org.apache.hadoop.mapreduce.Partitioner;
 
 public class TextPair {
@@ -22,7 +23,16 @@ public class TextPair {
         }
     }
 
-    public static class FirstComparator extends ByteWritable.Comparator {
-        
+    public static class FirstComparator implements RawComparator {
+
+        @Override
+        public int compare(byte[] b1, int s1, int l1, byte[] b2, int s2, int l2) {
+            return 0;
+        }
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            return 0;
+        }
     }
 }
