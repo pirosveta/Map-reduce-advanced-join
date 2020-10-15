@@ -12,7 +12,7 @@ public class TextPair {
     }
 
     public Object getFirst() {
-        return
+        return firstKey;
     }
 
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
