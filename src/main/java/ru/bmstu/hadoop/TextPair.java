@@ -19,6 +19,6 @@ public class TextPair {
     }
 
     public static class FirstComparator extends ByteWritable.Comparator {
-
+        
     }
 }
