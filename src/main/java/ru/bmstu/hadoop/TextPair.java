@@ -53,6 +53,10 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
     }
 
     public static class FirstComparator extends WritableComparator {
+        public FirstComparator() {
+            super(TextPair.class, true);
+        }
+
         @Override
         public int compare(WritableComparable a, WritableComparable b) {
             TextPair firstObject = (TextPair) a;
