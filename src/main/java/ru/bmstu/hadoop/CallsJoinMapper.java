@@ -14,7 +14,6 @@ public class CallsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> 
             try {
                 if (Double.parseDouble(columns[17]) > 0) {
                     String destAirportId = columns[14], delay = columns[17];
-                    System.out.println(delay);
                     context.write(new TextPair(destAirportId, "1"), new Text(delay));
                 }
             }
