@@ -30,8 +30,8 @@ public class TextPair {
         }
 
         @Override
-        public int compare(Object o1, Object o2) {
-            
+        public int compare(TextPair o1, TextPair o2) {
+
         }
     }
 }
