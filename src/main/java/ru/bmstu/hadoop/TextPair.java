@@ -21,8 +21,8 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         this.secondKey = new Text(secondKey);
     }
 
-    public TextPair getFirst() {
-        return new TextPair(this.firstKey.toString(), "");
+    public Text getFirst() {
+        return new Text(this.firstKey);
     }
 
     @Override
