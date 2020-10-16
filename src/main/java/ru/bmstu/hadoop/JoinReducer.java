@@ -12,6 +12,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text nameOfAirport = new Text(iter.next());
+        System.out.println("NAME_OF_AIRPORT: " + nameOfAirport);
         double minDelay = Double.MAX_VALUE, maxDelay = 0, avgDelay = 0, numberOfDelay = 0;
         while (iter.hasNext()) {
             double delay = Double.parseDouble(iter.next().toString());
@@ -24,7 +25,6 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         }
         avgDelay /= numberOfDelay;
         if (numberOfDelay > 0) {
-            System.out.println(nameOfAirport);
             Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
             context.write(key.getFirst(), outValue);
         }

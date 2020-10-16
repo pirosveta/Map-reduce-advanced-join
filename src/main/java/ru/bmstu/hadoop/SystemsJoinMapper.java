@@ -12,7 +12,6 @@ public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
         if (key.get() > 0) {
             String[] columns = value.toString().split(",", 2);
             String destAirportId = columns[0], nameAirport = columns[1];
-            System.out.println("NAME_OF_AIRPORT: " + nameAirport);
             context.write(new TextPair(destAirportId, "0"), new Text(nameAirport));
         }
     }
