@@ -11,14 +11,13 @@ public class TextPair implements Writable, WritableComparable{
     Text firstKey = new Text();
     Text secondKey = new Text();
 
-
     public TextPair(String firstKey, String secondKey) {
         this.firstKey = new Text(firstKey);
         this.secondKey = new Text(secondKey);
     }
 
     public Object getFirst() {
-        return firstKey;
+        return this.firstKey;
     }
 
     @Override
@@ -28,12 +27,14 @@ public class TextPair implements Writable, WritableComparable{
 
     @Override
     public void write(DataOutput out) throws IOException {
-
+        this.firstKey.write(out);
+        this.secondKey.write(out);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
-
+        this.firstKey.readFields(in);
+        this.secondKey.readFields(in);
     }
 
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
