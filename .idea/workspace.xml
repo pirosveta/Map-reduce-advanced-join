@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="" />
+    <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/TextPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/TextPair.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +96,7 @@
       <workItem from="1602514832987" duration="2726000" />
       <workItem from="1602661802656" duration="2979000" />
       <workItem from="1602765314999" duration="4074000" />
-      <workItem from="1602849215137" duration="594000" />
+      <workItem from="1602849215137" duration="850000" />
     </task>
     <servers />
   </component>
