@@ -11,11 +11,6 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
     Text firstKey = new Text();
     Text secondKey = new Text();
 
-    public TextPair() {
-        this.firstKey = new Text("");
-        this.secondKey = new Text("");
-    }
-
     public TextPair(String firstKey, String secondKey) {
         this.firstKey = new Text(firstKey);
         this.secondKey = new Text(secondKey);
