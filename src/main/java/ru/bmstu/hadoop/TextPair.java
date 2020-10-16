@@ -63,12 +63,6 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         public int compare(WritableComparable a, WritableComparable b) {
             TextPair firstObject = (TextPair) a;
             TextPair secondObject = (TextPair) b;
-            if (firstObject.firstKey.compareTo(secondObject.firstKey) == 0 &&
-                    (firstObject.secondKey.toString() == "0" || secondObject.secondKey.toString() == "0")) {
-                System.out.println("FIRST: " + firstObject.firstKey + "; SECOND: " + secondObject.firstKey);
-                System.out.println("AND");
-                System.out.println("FIRST: " + firstObject.secondKey + "; SECOND: " + secondObject.secondKey);
-            }
             return firstObject.firstKey.compareTo(secondObject.firstKey);
         }
     }
