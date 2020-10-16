@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9be4c7b-4afd-4fbd-aeef-aa4dc12a4a05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/TextPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bmstu/hadoop/TextPair.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +106,7 @@
       <workItem from="1602661802656" duration="2979000" />
       <workItem from="1602765314999" duration="4074000" />
       <workItem from="1602849215137" duration="5567000" />
-      <workItem from="1602867695615" duration="727000" />
+      <workItem from="1602867695615" duration="1112000" />
     </task>
     <servers />
   </component>
@@ -127,10 +126,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="315" y="0" width="1280" height="964" key="#Project_Structure" timestamp="1602514569725">
+    <state x="315" y="0" width="1280" height="964" key="#Project_Structure" timestamp="1602868433841">
       <screen x="0" y="0" width="1920" height="964" />
     </state>
-    <state x="315" y="0" width="1280" height="964" key="#Project_Structure/0.0.1920.964@0.0.1920.964" timestamp="1602514569725" />
+    <state x="315" y="0" width="1280" height="964" key="#Project_Structure/0.0.1920.964@0.0.1920.964" timestamp="1602868433841" />
     <state x="414" y="132" width="1092" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602859511343">
       <screen x="0" y="0" width="1920" height="964" />
     </state>

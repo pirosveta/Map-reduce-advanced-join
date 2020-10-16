@@ -23,8 +23,8 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
 
     public LongWritable getFirst() {
         long firstKey = 0;
-        try (Long.parseLong(this.firstKey.toString())) {
-
+        try {
+            firstKey = Long.parseLong(this.firstKey.toString());
         }
         catch (NumberFormatException e) {
             System.out.println(e);
