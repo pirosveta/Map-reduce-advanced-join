@@ -57,6 +57,7 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         public int compare(WritableComparable a, WritableComparable b) {
             TextPair firstObject = (TextPair) a;
             TextPair secondObject = (TextPair) b;
+            System.out.println("FIRST_OBJECT: " + firstObject.firstKey + "; SECOND_OBJECT: " + secondObject.firstKey);
             return firstObject.firstKey.compareTo(secondObject.firstKey);
         }
     }
