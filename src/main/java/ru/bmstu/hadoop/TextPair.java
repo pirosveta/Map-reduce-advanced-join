@@ -7,7 +7,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class TextPair implements Writable, WritableComparable{
+public class TextPair implements Writable, WritableComparable<TextPair>{
     Text firstKey = new Text();
     Text secondKey = new Text();
 
@@ -21,7 +21,7 @@ public class TextPair implements Writable, WritableComparable{
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(TextPair o) {
         return 0;
     }
 
