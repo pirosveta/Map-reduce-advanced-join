@@ -1,8 +1,0 @@
-ru/bmstu/hadoop/SystemsJoinMapper.class
-ru/bmstu/hadoop/TextPair$FirstComparator.class
-ru/bmstu/hadoop/CallsJoinMapper.class
-ru/bmstu/hadoop/JoinJob.class
-ru/bmstu/hadoop/HashPartitioner.class
-ru/bmstu/hadoop/TextPair$FirstPartitioner.class
-ru/bmstu/hadoop/TextPair.class
-ru/bmstu/hadoop/JoinReducer.class
