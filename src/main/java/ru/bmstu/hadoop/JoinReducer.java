@@ -12,14 +12,13 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text nameOfAirport = new Text(iter.next());
-        double minDelay = Integer.MAX_VALUE, maxDelay = 0, avgDelay = 0, numberOfDelay = 0;
+        double minDelay = Double.MAX_VALUE, maxDelay = 0, avgDelay = 0, numberOfDelay = 0;
         while (iter.hasNext()) {
             double delay = Double.parseDouble(iter.next().toString());
             if (delay < minDelay) minDelay = delay;
             if (delay > maxDelay) maxDelay = delay;
             avgDelay += delay;
             numberOfDelay++;
-            System.out.println("DA");
         }
         avgDelay /= numberOfDelay;
         Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
