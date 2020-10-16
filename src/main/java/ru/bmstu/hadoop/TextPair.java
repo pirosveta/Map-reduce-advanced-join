@@ -1,10 +1,16 @@
 package ru.bmstu.hadoop;
 
 import org.apache.hadoop.io.RawComparator;
+import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Partitioner;
 
-public class TextPair {
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+public class TextPair implements WritableComparable{
     private String firstKey, secondKey;
+    
 
     public TextPair(String firstKey, String secondKey) {
         this.firstKey = firstKey;
@@ -13,6 +19,21 @@ public class TextPair {
 
     public Object getFirst() {
         return firstKey;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+
+    @Override
+    public void write(DataOutput out) throws IOException {
+
+    }
+
+    @Override
+    public void readFields(DataInput in) throws IOException {
+
     }
 
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
@@ -29,8 +50,7 @@ public class TextPair {
             return 0;
         }
 
-        @Override
-        public int compare(TextPair o1, TextPair o2) {
+        public int compare(WritableComparable o1, WritableComparable o2) {
 
         }
     }
