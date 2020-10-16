@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class JoinJob {
-    public int main(String[] args) throws Exception{
+    public void main(String[] args) throws Exception{
         Job job = Job.getInstance();
         job.setJarByClass(JoinJob.class);
         job.setJobName("JoinJob sort");
