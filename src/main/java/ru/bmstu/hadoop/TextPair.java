@@ -21,8 +21,15 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         this.secondKey = new Text(secondKey);
     }
 
-    public TextPair getFirst() {
-        return this.firstKey;
+    public LongWritable getFirst() {
+        long firstKey = 0;
+        try (Long.parseLong(this.firstKey.toString())) {
+
+        }
+        catch (NumberFormatException e) {
+            System.out.println(e);
+        }
+        return LongWritable(Long.parseLong(this.firstKey.toString()));
     }
 
     @Override

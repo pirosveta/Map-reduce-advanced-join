@@ -69,7 +69,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/apache-maven-3.6.3/lib/wagon-provider-api-3.3.4.jar" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -85,17 +85,6 @@
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.bmstu.hadoop.JoinJob" />
       <module name="Map-reduce-advanced-join" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,7 +106,8 @@
       <workItem from="1602514832987" duration="2726000" />
       <workItem from="1602661802656" duration="2979000" />
       <workItem from="1602765314999" duration="4074000" />
-      <workItem from="1602849215137" duration="5112000" />
+      <workItem from="1602849215137" duration="5567000" />
+      <workItem from="1602867695615" duration="727000" />
     </task>
     <servers />
   </component>
