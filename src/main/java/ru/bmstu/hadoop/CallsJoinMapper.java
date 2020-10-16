@@ -11,9 +11,14 @@ public class CallsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> 
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
             String[] columns = value.toString().split(",");
-            if (Double.parseDouble(columns[17]) > 0) {
-                String destAirportId = columns[14], delay = columns[17];
-                context.write(new TextPair(destAirportId, "1"), new Text(delay));
+            try {
+                if (Double.parseDouble(columns[17]) > 0) {
+                    String destAirportId = columns[14], delay = columns[17];
+                    context.write(new TextPair(destAirportId, "1"), new Text(delay));
+                }
+            }
+            catch (NumberFormatException e) {
+                
             }
         }
     }
