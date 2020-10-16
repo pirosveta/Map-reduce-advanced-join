@@ -16,9 +16,9 @@ public class CallsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> 
                     String destAirportId = columns[14], delay = columns[17];
                     context.write(new TextPair(destAirportId, "1"), new Text(delay));
                 }
+                System.out.println("DA");
             }
             catch (NumberFormatException e) {
-                System.out.println(e);
             }
         }
     }
