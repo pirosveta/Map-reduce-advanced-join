@@ -49,6 +49,7 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         @Override
         public int getPartition(Object o, Object o2, int numPartitions) {
             TextPair key = (TextPair) o;
+            System.out.println("KEY: " + key.firstKey + "; NUMBER: " + key.secondKey);
             return (key.firstKey.hashCode() & Integer.MAX_VALUE) % numPartitions;
         }
     }
