@@ -12,7 +12,6 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text nameOfAirport = new Text(iter.next());
-        System.out.println("NAME_OF_AIRPORT: " + nameOfAirport);
         int minDelay = Integer.MAX_VALUE, maxDelay = 0, numberOfDelay = 0;
         double avgDelay = 0;
         while (iter.hasNext()) {
