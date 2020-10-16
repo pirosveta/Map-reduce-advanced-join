@@ -18,7 +18,7 @@ public class CallsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> 
                 }
             }
             catch (NumberFormatException e) {
-                
+                System.out.println(e);
             }
         }
     }
