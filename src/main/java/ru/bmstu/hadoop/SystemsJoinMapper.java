@@ -10,7 +10,7 @@ public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
-            String[] columns = value.toString().split(",");
+            String[] columns = value.toString().split(",", 1);
             String destAirportId = columns[0], nameAirport = columns[1];
             context.write(new TextPair(destAirportId,"0"), new Text(nameAirport));
         }
