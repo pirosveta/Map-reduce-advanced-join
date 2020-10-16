@@ -51,11 +51,15 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         else return this.firstKey.compareTo(other.firstKey);
     }
 
-    public static class FirstPartitioner extends Partitioner {
-        @Override
-        public int getPartition(Object o, Object o2, int numPartitions) {
+    public class FirstPartitioner extends Partitioner{
+        public int getPartition(TextPair o, Text o2, int numPartitions) {
             TextPair key = (TextPair) o;
             return key.firstKey.hashCode() & numPartitions;
+        }
+
+        @Override
+        public int getPartition(Object o, Object o2, int numPartitions) {
+            return 0;
         }
     }
 
