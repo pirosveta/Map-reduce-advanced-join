@@ -15,13 +15,16 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         double minDelay = Double.MAX_VALUE, maxDelay = 0, avgDelay = 0, numberOfDelay = 0;
         while (iter.hasNext()) {
             double delay = Double.parseDouble(iter.next().toString());
+            System.out.println(delay);
             if (delay < minDelay) minDelay = delay;
             if (delay > maxDelay) maxDelay = delay;
             avgDelay += delay;
             numberOfDelay++;
         }
         avgDelay /= numberOfDelay;
-        Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
-        context.write(key.getFirst(), outValue);
+        if (maxDelay > 0) {
+            Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
+            context.write(key.getFirst(), outValue);
+        }
     }
 }
