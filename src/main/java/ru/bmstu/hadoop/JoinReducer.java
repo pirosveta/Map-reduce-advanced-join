@@ -19,6 +19,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
             if (delay > maxDelay) maxDelay = delay;
             avgDelay += delay;
             numberOfDelay++;
+            System.out.println("DA");
         }
         avgDelay /= numberOfDelay;
         Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
