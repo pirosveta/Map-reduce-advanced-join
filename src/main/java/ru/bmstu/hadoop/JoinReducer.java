@@ -23,6 +23,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         }
         avgDelay /= numberOfDelay;
         if (numberOfDelay > 0) {
+            System.out.println(nameOfAirport);
             Text outValue = new Text(nameOfAirport + "\t" + minDelay + "\t" + maxDelay + "\t" + avgDelay);
             context.write(key.getFirst(), outValue);
         }
