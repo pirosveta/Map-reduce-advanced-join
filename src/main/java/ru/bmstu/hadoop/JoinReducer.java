@@ -7,10 +7,6 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
-    public JoinReducer() {
-        super();
-    }
-
     @Override
     protected void reduce(TextPair key, Iterable<Text> values, Context context) throws
             IOException, InterruptedException {
