@@ -1,18 +1,18 @@
 package ru.bmstu.hadoop;
 
-import org.apache.hadoop.io.RawComparator;
-import org.apache.hadoop.io.WritableComparable;
+import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.Partitioner;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class TextPair implements WritableComparable{
-    private String firstKey, secondKey;
-    
+public class TextPair implements Writable, WritableComparable{
+    Text firstKey = new Text();
+    Text secondKey = new Text();
 
-    public TextPair(String firstKey, String secondKey) {
+
+    public TextPair(Text firstKey, Text secondKey) {
         this.firstKey = firstKey;
         this.secondKey = secondKey;
     }
