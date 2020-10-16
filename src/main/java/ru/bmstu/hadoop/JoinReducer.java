@@ -15,11 +15,12 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         double minDelay = Double.MAX_VALUE, maxDelay = 0, avgDelay = 0, numberOfDelay = 0;
         while (iter.hasNext()) {
             double delay = Double.parseDouble(iter.next().toString());
-            System.out.println(delay);
             if (delay < minDelay) minDelay = delay;
             if (delay > maxDelay) maxDelay = delay;
             avgDelay += delay;
             numberOfDelay++;
+            System.out.println("CurrentDelay: " + delay + "; min: " +
+                    minDelay + "; max: " + maxDelay + "; avg: " + avgDelay + "; count: " + numberOfDelay);
         }
         avgDelay /= numberOfDelay;
         if (numberOfDelay > 0) {
