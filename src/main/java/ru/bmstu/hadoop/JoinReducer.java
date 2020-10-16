@@ -16,7 +16,7 @@ public class JoinReducer extends Reducer<TextPair, Text, Text, Text> {
         int minDelay = Integer.MAX_VALUE, maxDelay = 0, numberOfDelay = 0;
         double avgDelay = 0;
         while (iter.hasNext()) {
-            double delay = (int) Double.parseDouble(iter.next().toString());
+            int delay = (int) Double.parseDouble(iter.next().toString());
             if (delay < minDelay) minDelay = delay;
             if (delay > maxDelay) maxDelay = delay;
             avgDelay += delay;
