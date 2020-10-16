@@ -8,8 +8,8 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class TextPair implements Writable, WritableComparable<TextPair>{
-    Text firstKey = new Text();
-    Text secondKey = new Text();
+    Text firstKey;
+    Text secondKey;
 
     public TextPair() {
         this.firstKey = new Text("");
