@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class SystemsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
     private static final REGEX = "\"", REPLACE = "";
-    
+
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
