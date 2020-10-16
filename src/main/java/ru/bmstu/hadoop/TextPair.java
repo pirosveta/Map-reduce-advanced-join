@@ -21,14 +21,6 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
     }
 
     @Override
-    public int compareTo(TextPair other) {
-        if (this.firstKey.equals(other.firstKey)) {
-            return this.secondKey.compareTo(other.secondKey);
-        }
-        else return this.firstKey.compareTo(other.firstKey);
-    }
-
-    @Override
     public void write(DataOutput out) throws IOException {
         this.firstKey.write(out);
         this.secondKey.write(out);
@@ -38,6 +30,14 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
     public void readFields(DataInput in) throws IOException {
         this.firstKey.readFields(in);
         this.secondKey.readFields(in);
+    }
+
+    @Override
+    public int compareTo(TextPair other) {
+        if (this.firstKey.equals(other.firstKey)) {
+            return this.secondKey.compareTo(other.secondKey);
+        }
+        else return this.firstKey.compareTo(other.firstKey);
     }
 
     public static class FirstPartitioner<K, V> extends Partitioner<K, V> {
