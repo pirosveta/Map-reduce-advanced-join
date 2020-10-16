@@ -50,7 +50,9 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
     public class FirstComparator extends WritableComparator {
         @Override
         public int compare(WritableComparable a, WritableComparable b) {
-            return super.compare(a, b);
+            TextPair first = (TextPair) a;
+            TextPair second = (TextPair) b;
+            return first.firstKey.compareTo(second.firstKey);
         }
     }
 }
