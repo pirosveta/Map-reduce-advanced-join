@@ -1,0 +1,6 @@
+/home/sveta/Desktop/DPDP/lab2/Map-reduce-advanced-join/src/main/java/ru/bmstu/hadoop/SystemsJoinMapper.java
+/home/sveta/Desktop/DPDP/lab2/Map-reduce-advanced-join/src/main/java/ru/bmstu/hadoop/JoinJob.java
+/home/sveta/Desktop/DPDP/lab2/Map-reduce-advanced-join/src/main/java/ru/bmstu/hadoop/HashPartitioner.java
+/home/sveta/Desktop/DPDP/lab2/Map-reduce-advanced-join/src/main/java/ru/bmstu/hadoop/TextPair.java
+/home/sveta/Desktop/DPDP/lab2/Map-reduce-advanced-join/src/main/java/ru/bmstu/hadoop/JoinReducer.java
+/home/sveta/Desktop/DPDP/lab2/Map-reduce-advanced-join/src/main/java/ru/bmstu/hadoop/CallsJoinMapper.java
