@@ -47,15 +47,10 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         }
     }
 
-    public class FirstComparator implements RawComparator {
-
+    public class FirstComparator extends WritableComparator {
         @Override
-        public int compare(byte[] b1, int s1, int l1, byte[] b2, int s2, int l2) {
-            return 0;
-        }
-
-        public int compare(WritableComparable o1, WritableComparable o2) {
-
+        public int compare(WritableComparable a, WritableComparable b) {
+            return super.compare(a, b);
         }
     }
 }
