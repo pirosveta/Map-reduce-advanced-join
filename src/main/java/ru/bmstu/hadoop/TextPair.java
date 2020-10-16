@@ -28,6 +28,7 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
         catch (NumberFormatException e) {
             System.out.println(e);
         }
+        return new LongWritable(0);
     }
 
     @Override
