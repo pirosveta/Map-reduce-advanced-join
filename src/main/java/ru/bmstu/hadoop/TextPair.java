@@ -12,9 +12,9 @@ public class TextPair implements Writable, WritableComparable{
     Text secondKey = new Text();
 
 
-    public TextPair(Text firstKey, Text secondKey) {
-        this.firstKey = firstKey;
-        this.secondKey = secondKey;
+    public TextPair(String firstKey, String secondKey) {
+        this.firstKey = new Text(firstKey);
+        this.secondKey = new Text(secondKey);
     }
 
     public Object getFirst() {
