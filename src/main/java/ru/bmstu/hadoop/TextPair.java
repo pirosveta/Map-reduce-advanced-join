@@ -21,8 +21,11 @@ public class TextPair implements Writable, WritableComparable<TextPair>{
     }
 
     @Override
-    public int compareTo(TextPair o) {
-        return 0;
+    public int compareTo(TextPair other) {
+        if (this.firstKey.equals(other.firstKey)) {
+            return this.secondKey.compareTo(other.secondKey);
+        }
+        else return this.firstKey.compareTo(other.firstKey);
     }
 
     @Override
