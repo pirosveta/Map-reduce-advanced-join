@@ -31,12 +31,8 @@ public class TextPair {
             return 0;
         }
 
-        public int compare(WritableComparable o1, WritableComparable o2) {
-            return 0;
-        }
-
         @Override
-        public int compare(Object o1, Object o2) {
+        public int compare(WritableComparable o1, WritableComparable o2) {
             return 0;
         }
     }
