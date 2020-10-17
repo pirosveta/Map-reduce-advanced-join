@@ -1,0 +1,7 @@
+ru/bmstu/hadoop/FlightJoinMapper.class
+ru/bmstu/hadoop/JoinJob.class
+ru/bmstu/hadoop/HashPartitioner.class
+ru/bmstu/hadoop/AirportJoinMapper.class
+ru/bmstu/hadoop/GroupComparator.class
+ru/bmstu/hadoop/TextPair.class
+ru/bmstu/hadoop/JoinReducer.class
