@@ -52,17 +52,4 @@ public class TextPair implements WritableComparable<TextPair>{
             return (key.firstKey.hashCode() & Integer.MAX_VALUE) % numPartitions;
         }
     }
-
-    public static class FirstComparator extends WritableComparator {
-        public FirstComparator() {
-            super(TextPair.class, true);
-        }
-
-        @Override
-        public int compare(WritableComparable a, WritableComparable b) {
-            TextPair firstObject = (TextPair) a;
-            TextPair secondObject = (TextPair) b;
-            return firstObject.firstKey.compareTo(secondObject.firstKey);
-        }
-    }
 }
