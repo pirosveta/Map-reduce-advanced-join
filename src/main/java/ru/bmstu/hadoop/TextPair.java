@@ -7,7 +7,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class TextPair implements Writable, WritableComparable<TextPair>{
+public class TextPair implements WritableComparable<TextPair>{
     Text firstKey;
     Text secondKey;
 
