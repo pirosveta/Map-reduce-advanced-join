@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class CallsJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
+public class FlightJoinMapper extends Mapper<LongWritable, Text, TextPair, Text> {
     private static final int COLUMN_ID = 14, COLUMN_DELAY = 17;
 
     @Override
